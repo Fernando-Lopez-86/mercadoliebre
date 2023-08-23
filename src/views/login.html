@@ -33,23 +33,17 @@
             <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin
             tarjeta de crédito
         </p>
-        <nav class="hide">
-            <ul class="py-1">
-                <li><a class="nav-link" href="#">Ofertas</a></li>
-                <li><a class="nav-link" href="#">Tiendas Oficiales</a></li>
-                <li><a class="nav-link" href="#">Vender</a></li>
-                <li><a class="nav-link" href="#">Ayuda</a></li>
+        <nav class="w-100 nav-menu">
+            <ul class="nav-menu-list w-50">
+                <li><a class="nav-menu-item" href="#">Ofertas</a></li>
+                <li><a class="nav-menu-item" href="#">Tiendas Oficiales</a></li>
+                <li><a class="nav-menu-item" href="#">Vender</a></li>
+                <li><a class="nav-menu-item" href="#">Ayuda</a></li>
             </ul>
-            <ul class="py-1">
-                <li>
-                    <a class="nav-link" href="/register">Crea tu cuenta <i class="fa-solid fa-address-card"></i></a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#">Mis Compras <i class="fa-solid fa-basket-shopping"></i></a>
-                </li>
+            <ul class="nav-menu-list w-50">
+                <li><a class="nav-menu-item" href="/register">Crea tu cuenta <i class="fa-solid fa-address-card"></i></a></li>
+                <li><a class="nav-menu-item" href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a class="nav-menu-item" href="/cart">Mis Compras <i class="fa-solid fa-basket-shopping"></i></a></li>
             </ul>
         </nav>
         <div class="text-center w-100">
@@ -57,8 +51,45 @@
         </div>
     </header>
 
-    <!-- Para la casa -->
-    <footer></footer>
+    <main class="fc-login">
+        <form action="/home" method="POST" class="form-login">
+            <div>
+                <input type="text" placeholder=" Nombre de usuario" id="nombreUsuario" class="input" required>
+            </div>
+            <div>
+                <input type="password" placeholder=" Contraseña" id="password" class="input" minlength="4" maxlength="12" required>
+            </div>
+            <div>
+                <button type="submit" class="button">Enviar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="p-1 flex flex-wrap font-lg">
+        <div class="py-1 block w-100 lg-w-25 md-w-50">
+            <i class="fa-solid fa-credit-card iconos"></i>
+            <p><h3><b>Pagá con tarjeta o en efectivo</b></h3></p>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro!</p>
+        </div>
+        <div class=" py-1 block w-100 lg-w-25 md-w-50">
+            <p><i class="fa-solid fa-gift iconos"></i></p>
+            <p><h3><b>Envío gratis desde $2.500</b></h3></p>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p>
+        </div>
+        <div class="py-1 block w-100 lg-w-25 md-w-50">
+            <p><i class="fa-solid fa-user-shield iconos"></i></p>
+            <p><h3><b>Seguridad, de principio a fin</b></h3></p>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+        </div>
+    </footer>
+
+    <div class="py-1 text-center bg-white">
+        <p><h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4></p>
+    </div>
+
 </body>
 
 </html>

@@ -22,8 +22,7 @@
         </h1>
         <div class="p-2 w-50 align-center">
             <form action="/" class="p-1 flex radius-1 bg-white">
-                <input class="flex-grow b-none outline-none font-xl" type="text" name="search"
-                    placeholder="Buscá productos por nombre, marcas o palabras clave" />
+                <input class="flex-grow b-none outline-none font-xl" type="text" name="search" placeholder="Buscá productos por nombre, marcas o palabras clave" />
                 <button type="submit" class="bg-white b-none">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
@@ -33,17 +32,17 @@
             <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin
             tarjeta de crédito
         </p>
-        <nav class="">
-            <ul class="py-1">
-                <li><a class="nav-link" href="#">Ofertas</a></li>
-                <li><a class="nav-link" href="#">Tiendas Oficiales</a></li>
-                <li><a class="nav-link" href="#">Vender</a></li>
-                <li><a class="nav-link" href="#">Ayuda</a></li>
+        <nav class="w-100 nav-menu">
+            <ul class="nav-menu-list w-50">
+                <li><a class="nav-menu-item" href="#">Ofertas</a></li>
+                <li><a class="nav-menu-item" href="#">Tiendas Oficiales</a></li>
+                <li><a class="nav-menu-item" href="#">Vender</a></li>
+                <li><a class="nav-menu-item" href="#">Ayuda</a></li>
             </ul>
-            <ul class="py-1">
-                <li><a class="nav-link" href="/register">Crea tu cuenta <i class="fa-solid fa-address-card"></i></a></li>
-                <li><a class="nav-link" href="#">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
-                <li><a class="nav-link" href="#">Mis Compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+            <ul class="nav-menu-list w-50">
+                <li><a class="nav-menu-item" href="/register">Crea tu cuenta <i class="fa-solid fa-address-card"></i></a></li>
+                <li><a class="nav-menu-item" href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a class="nav-menu-item" href="/cart">Mis Compras <i class="fa-solid fa-basket-shopping"></i></a></li>
             </ul>
         </nav>
         <div class="text-center w-100">
@@ -134,60 +133,31 @@
         </section>
     </main>
 
-    <footer class="p-1 vw-90 mx-auto">
-        <section class="p-1 flex flex-wrap gap">
-            <article class="my-1 w-100 md-w-50 lg-w-25">
-                <div class="bt-1 border-grey p-1 relative flex flex-wrap">
-                    <h3 class="font-lg w-100">Pagá con tarjeta o en efectivo</h3>
-                    <p class="font-lg">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                        puntos de pago. ¡Y siempre es seguro!</p>
-                </div>
-            </article>
-            <article class="my-1 w-100 md-w-50 lg-w-25">
-                <div class="bt-1 border-grey p-1 relative flex flex-wrap">
-                    <h3 class="font-lg w-100">Envío gratis desde $ 2.500</h3>
-                    <p class="font-lg">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                        productos. Es un beneficio de Mercado Puntos.</p>
-                </div>
-            </article>
-            <article class="my-1 w-100 md-w-50 lg-w-25">
-                <div class="bt-1 border-grey p-1 relative flex flex-wrap">
-                    <h3 class="font-lg w-100">Seguridad, de principio a fin</h3>
-                    <p class="font-lg">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                        porque estás siempre protegid@.</p>
-                </div>
-            </article>
-            <article class="my-1 w-100 md-w-50 lg-w-25">
-                <div class="bt-1 border-grey p-1 relative flex flex-wrap">
-                    <h3 class="font-lg w-100">Seguridad, de principio a fin</h3>
-                    <p class="font-lg">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                        porque estás siempre protegid@.</p>
-                </div>
-            </article>
-        </section>
-        <section>
-            <article>
-                <div class="text-center p-1 relative flex flex-wrap">
-                    <h3 class="font-lg w-100">Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
-                    <p class="font-lg"></p>
-                </div>
-            </article>
-        </section>
+    <footer class="p-1 flex flex-wrap font-lg">
+        <div class="py-1 block w-100 lg-w-25 md-w-50">
+            <i class="fa-solid fa-credit-card iconos"></i>
+            <p><h3><b>Pagá con tarjeta o en efectivo</b></h3></p>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro!</p>
+        </div>
+        <div class=" py-1 block w-100 lg-w-25 md-w-50">
+            <p><i class="fa-solid fa-gift iconos"></i></p>
+            <p><h3><b>Envío gratis desde $2.500</b></h3></p>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p>
+        </div>
+        <div class="py-1 block w-100 lg-w-25 md-w-50">
+            <p><i class="fa-solid fa-user-shield iconos"></i></p>
+            <p><h3><b>Seguridad, de principio a fin</b></h3></p>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+        </div>
     </footer>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
+    <div class="py-1 text-center bg-white">
+        <p><h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4></p>
+    </div>
 
 </body>
 
 </html>
-
-
