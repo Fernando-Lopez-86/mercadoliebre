@@ -48,27 +48,28 @@
         
         <img class="w-100" src="/images/img-home-banner.jpg" alt="Promoción fiestas" />
 
-        <main class="main">
+        <main class="p-2 main">
             <form action="/home" method="POST" class="form" >
-                <div><input type="text" placeholder=" Nombre y apellido" id="nombreApellido" class="input" maxlength="250"></div>
-                <div><input type="text" placeholder=" Nombre de usuario" id="nombreUsuario" class="input" maxlength=""></div>
-                <div><input type="email" placeholder=" Email" id="email" class="input" maxlength="120"></div>
-                <div><label for="fechaNac"><h3 class="margen-15px">Fecha de nacimiento</h3></label><input type="date" placeholder=" Fecha de nacimiento" id="fechaNac"></div>
-                <div><input type="text" placeholder=" Domicilio" id="domicilio" class="input"></div>
-                <div><label><h3 class="margen-15px">Perfil de usuario</h3></label>
+                <input type="text" placeholder=" Nombre y apellido" id="nombreApellido" class="input" maxlength="250" required>
+                <input type="text" placeholder=" Nombre de usuario" id="nombreUsuario" class="input" maxlength="" required>
+                <input type="email" placeholder=" Email" id="email" class="input" maxlength="120" required>
+                <label for="fechaNac"><h3 class="margen-15px">Fecha de nacimiento</h3></label><input type="date" placeholder=" Fecha de nacimiento" id="fechaNac" required>
+                <input type="text" placeholder=" Domicilio" id="domicilio" class="input">
+                <label><h3 class="margen-15px">Perfil de usuario</h3></label>
                 <div><input type="radio" name="perfil" id="comprador"><label for="comprador">Comprador</label></div>               
-                <div><input type="radio" name="perfil" id="vendedor"><label for="vendedor">Vendedor</label></div> </div>
-                <div><label><h3 class="margen-15px">Intereses</h3></label>
+                <div></div><input type="radio" name="perfil" id="vendedor"><label for="vendedor">Vendedor</label></div> </div>
+                <label><h3 class="margen-15px">Intereses</h3></label>
                 <div><input type="checkbox" name="electro"><label for="electro">Electro</label></div>
                 <div><input type="checkbox" name="moda"><label for="moda">Moda</label></div>
                 <div><input type="checkbox" name="hogar"><label for="hogar">Hogar</label></div>
                 <div><input type="checkbox" name="jugueteria"><label for="jugueteria">Juguetería</label></div>
                 <div><input type="checkbox" name="vidasana"><label for="vidasana">Vida sana</label></div></div>
-                <div><label>Seleccionar una imagen para el perfil:</label><input type="file" name="avatar" accept=".jpg" multiple></div>
-                <div><input type="password" placeholder=" Contraseña" id="password" class="input" required></div>
-                <div><input type="password" placeholder=" Confirmar contraseña" id="passwordConf" class="input" required></div>
-                <div class="fc-buttons"><div class="fc-buttons-item"><button type="reset" class="button">Cancelar</button></div>
-                <div class="fc-buttons-item"><button type="submit" class="button">Enviar</button></div></div>
+                <div><label>Seleccionar una imagen para el perfil:</label>
+                <div><input type="file" name="avatar" accept=".jpg" multiple></div>
+                <input type="password" placeholder=" Contraseña" id="password" class="input" required>
+                <input type="password" placeholder=" Confirmar contraseña" id="passwordConf" class="input" required>
+                <button type="submit" class="button fc-buttons fc-buttons-item">Enviar</button>
+                <button type="reset" class="button fc-buttons fc-buttons-item">Cancelar</button>
             </form>
         </main>
 
